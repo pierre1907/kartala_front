@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListeActiviteComponent } from './liste-activite/liste-activite.component';
 import { AjoutActiviteComponent } from './ajout-activite/ajout-activite.component';
 import { DetailsActiviteComponent } from './details-activite/details-activite.component';
+import { ListeActiviteComponent } from './liste-activite/liste-activite.component';
 
 const routes: Routes =
   [
@@ -20,7 +20,7 @@ const routes: Routes =
       component: AjoutActiviteComponent
     },
     {
-      path: 'details-activite',
+      path: 'activite/:id',
       component: DetailsActiviteComponent
     }
   ];

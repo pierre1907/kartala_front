@@ -1,1 +1,55 @@
-<p>liste-activite works!</p>
+<div style="margin: 0px 50px 50px 50px;">
+  <button type="button" (click)="addActivite()" class="btn btn-info">Ajouter une activité</button>
+
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">Libellé</th>
+        <th scope="col">Budget alloué (€)</th>
+        <th scope="col">Date de début</th>
+        <th scope="col">Date de fin</th>
+        <th scope="col">Durée</th>
+        <th scope="col">Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr>
+        <td>{{ activites[0].libelle }}</td>
+        <td>{{ activites[0].budgetAlloue }}</td>
+        <td>{{ activites[0].dateDebut }}</td>
+        <td>{{ activites[0].dateFin }}</td>
+        <td>{{ activites[0].dureeExecution }}</td>
+        <td>
+          <button type="button"  (click)="viewActivite()" class="btn btn-primary btn-sm me-2">Détails</button>
+          <button type="button" (click)="deleteActivite()" class="btn btn-danger btn-sm ">Supprimer</button>
+        </td>
+      </tr>
+      <tr>
+        <td>{{ activites[1].libelle }}</td>
+        <td>{{ activites[1].budgetAlloue }}</td>
+        <td>{{ activites[1].dateDebut }}</td>
+        <td>{{ activites[1].dateFin }}</td>
+        <td>{{ activites[1].dureeExecution }}</td>
+        <td>
+          <button type="button"  (click)="viewActivite()" class="btn btn-primary btn-sm me-2">Détails</button>
+          <button type="button" (click)="deleteActivite()" class="btn btn-danger btn-sm ">Supprimer</button>
+        </td>
+      </tr>
+      <tr>
+        <td>{{ activites[2].libelle }}</td>
+        <td>{{ activites[2].budgetAlloue }}</td>
+        <td>{{ activites[2].dateDebut }}</td>
+        <td>{{ activites[2].dateFin }}</td>
+        <td>{{ activites[2].dureeExecution }}</td>
+        <td>
+          <button type="button"  (click)="viewActivite()" class="btn btn-primary btn-sm me-2">Détails</button>
+          <button type="button" (click)="deleteActivite()" class="btn btn-danger btn-sm ">Supprimer</button>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>

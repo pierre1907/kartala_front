@@ -1,1 +1,44 @@
-<p>ajout-activite works!</p>
+<div class="container">
+  <h2 class="text-center">Ajouter une activité</h2> <br>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon2">Libelle</span>
+        <input type="text" class="form-control" placeholder="Nom" aria-label="Libelle" aria-describedby="basic-addon2" >
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon3">Durée d'execution</span>
+        <input type="number" class="form-control" placeholder="Durée d'execution" aria-label="Durée" aria-describedby="basic-addon3">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon7">Budget Alloue</span>
+        <input type="number" class="form-control" placeholder="Budget" aria-label="Age" aria-describedby="basic-addon7" >
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon5">Date de debut</span>
+        <input type="date" class="form-control" aria-label="Date de debut" aria-describedby="basic-addon5" >
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon6">Date de fin</span>
+        <input type="date" class="form-control" aria-label="Date de fin" aria-describedby="basic-addon6" >
+      </div>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-12 d-flex justify-content-end">
+      <button type="button" (click)="return()" class="btn btn-danger me-2">Annuler</button>
+      <button type="button" (click)="onSubmit()" class="btn btn-primary">Enregistrer</button>
+    </div>
+  </div>
+</div>

@@ -40,15 +40,13 @@ export class ListeEmployeComponent {
   }
 
   deleteEmployee( ) {
-    if (confirm('Êtes-vous sûr de vouloir supprimer cet employé ?')) {
+    if (confirm('Êtes-vous sûr de vouloir supprimer cette activité ?')) {
       // Implémentez la logique de suppression ici
-      console.log('Employé supprimé avec succès');
+      console.log('Activité supprimée avec succès !');
 
     }
   }
-
-
-
+  
   goToAddEmp() {
     this.router.navigateByUrl('employe/ajout-employe');
   }

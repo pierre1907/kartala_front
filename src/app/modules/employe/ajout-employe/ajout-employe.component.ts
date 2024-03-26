@@ -14,9 +14,7 @@ export class AjoutEmployeComponent {
 
   constructor(
     private location: Location
-  ) {
-
-  }
+  ) {}
 
   onSubmit() {
     // Logique à exécuter lors de la soumission du formulaire

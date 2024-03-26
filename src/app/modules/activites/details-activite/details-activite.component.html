@@ -1,1 +1,16 @@
-<p>details-activite works!</p>
+
+
+
+<div class="container" style="margin: 0px 50px 50px 50px;">
+  <h2>Détails de l'Activité</h2>
+
+  <p> Libellé :  {{ activite?.libelle }}</p>
+  <p> Budget alloué :  {{activite.budgetAlloue}} €</p>
+  <p> Date de debut : {{activite.dateDebut }}</p>
+  <p> Date de fin : {{activite.dateFin }}</p>
+  <p> Durée : {{ activite.dureeExecution }}</p>
+
+  <div class="col-md-12 d-flex justify-content-end">
+    <button type="button" (click)="return()" class="btn btn-danger me-2">Retour</button>
+  </div>
+</div>

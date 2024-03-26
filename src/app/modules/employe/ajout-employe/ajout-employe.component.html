@@ -1,0 +1,79 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon2">Nom</span>
+        <input type="text" class="form-control" placeholder="Nom" aria-label="Nom" aria-describedby="basic-addon2" >
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon3">Prénom</span>
+        <input type="text" class="form-control" placeholder="Prénom" aria-label="Prénom" aria-describedby="basic-addon3">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon4">Fonction</span>
+        <input type="text" class="form-control" placeholder="Fonction" aria-label="Fonction" aria-describedby="basic-addon4">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon5">Date d'embauche</span>
+        <input type="date" class="form-control" aria-label="Date d'embauche" aria-describedby="basic-addon5" >
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon6">Date de fin de contrat</span>
+        <input type="date" class="form-control" aria-label="Date de fin de contrat" aria-describedby="basic-addon6" >
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon7">Age</span>
+        <input type="number" class="form-control" placeholder="Age" aria-label="Age" aria-describedby="basic-addon7" >
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon8">Sexe</span>
+        <select class="form-select" aria-label="Sexe">
+          <option>Homme</option>
+          <option>Femme</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon9">Statut matrimonial</span>
+        <input type="text" class="form-control" placeholder="Statut matrimonial" aria-label="Statut matrimonial" aria-describedby="basic-addon9" >
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon10">Niveau d'éducation</span>
+        <input type="text" class="form-control" placeholder="Niveau d'éducation" aria-label="Niveau d'éducation" aria-describedby="basic-addon10">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon11">Activités</span>
+        <input type="text" class="form-control" placeholder="Activités" aria-label="Activités" aria-describedby="basic-addon11">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 d-flex justify-content-end">
+      <button type="button" (click)="return()" class="btn btn-danger me-2">Annuler</button>
+      <button type="button" (click)="onSubmit()" class="btn btn-primary">Enregistrer</button>
+    </div>
+  </div>
+</div>

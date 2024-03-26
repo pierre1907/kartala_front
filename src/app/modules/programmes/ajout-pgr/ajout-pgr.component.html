@@ -1,0 +1,31 @@
+<div class="container" style="margin: 0px 50px 50px 50px;">
+  <h2>Ajouter un programme</h2>
+  <form>
+    <div class="mb-3">
+      <label for="libelle" class="form-label">Libellé de l'activité</label>
+      <input type="text" class="form-control" id="libelle" placeholder="Entrez le libellé de l'activité">
+    </div>
+    <div class="mb-3">
+      <label for="duree" class="form-label">Durée d'exécution (en jours)</label>
+      <input type="number" class="form-control" id="duree" placeholder="Entrez la durée d'exécution de l'activité">
+    </div>
+    <div class="mb-3">
+      <label for="dateDebut" class="form-label">Date de démarrage</label>
+      <input type="date" class="form-control" id="dateDebut">
+    </div>
+    <div class="mb-3">
+      <label for="dateFin" class="form-label">Date de fin effective</label>
+      <input type="date" class="form-control" id="dateFin">
+    </div>
+    <div class="mb-3">
+      <label for="budget" class="form-label">Budget alloué (en euros)</label>
+      <input type="number" class="form-control" id="budget" placeholder="Entrez le budget alloué à l'activité">
+    </div>
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-end">
+        <button type="button" (click)="return()" class="btn btn-danger me-2">Annuler</button>
+        <button type="submit" (click)="onSubmit()" class="btn btn-primary">Enregistrer</button>
+      </div>
+    </div>
+   </form>
+</div>

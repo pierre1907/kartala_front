@@ -1,0 +1,26 @@
+<div style="margin: 0px 50px 50px 50px;">
+  <h2>Détails de l'activité</h2>
+  <div class="mb-3">
+    <label class="form-label">Libellé de l'activité</label>
+    <p>{{ activite.libelle }}</p>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Durée d'exécution (en jours)</label>
+    <p>{{ activite.duree }}</p>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Date de démarrage</label>
+    <p>{{ activite.dateDebut }}</p>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Date de fin effective</label>
+    <p>{{ activite.dateFin }}</p>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Budget alloué (en euros)</label>
+    <p>{{ activite.budget }}</p>
+  </div>
+  <div class="col-md-12 d-flex justify-content-end">
+    <button class="btn btn-danger" (click)="goBack()">Retour</button>
+  </div>
+</div>

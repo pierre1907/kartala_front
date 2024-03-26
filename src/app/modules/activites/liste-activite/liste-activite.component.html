@@ -1,6 +1,8 @@
 <div style="margin: 0px 50px 50px 50px;">
-  <button type="button" (click)="addActivite()" class="btn btn-info">Ajouter une activité</button>
-
+  <div class="col">
+    <h1 class="mb-3">Liste des activités</h1>
+    <button type="button" (click)="addActivite()" class="btn btn-info">Ajouter une activité</button>
+  </div>
   <div class="table-responsive">
     <table class="table">
       <thead>
@@ -9,7 +11,7 @@
         <th scope="col">Budget alloué (€)</th>
         <th scope="col">Date de début</th>
         <th scope="col">Date de fin</th>
-        <th scope="col">Durée</th>
+        <th scope="col">Durée (mois)</th>
         <th scope="col">Actions</th>
       </tr>
       </thead>

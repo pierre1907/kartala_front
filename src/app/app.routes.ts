@@ -23,6 +23,15 @@ export const routes: Routes = [
     path: 'activite',
     loadChildren: () => import('./modules/activites/activites.module').then(m => m.ActivitesModule)
   },
+  {
+    path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full'
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./modules/dashboard/dashboard.module').then(m => m.DashboardModule)
+  }
 
 
 ];
